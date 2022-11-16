@@ -884,6 +884,8 @@ fill: transparent;
 .check-input:checked + .check-text span {
     background-color: var(--accent-color);
     border-color: transparent;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
      }
   
  
