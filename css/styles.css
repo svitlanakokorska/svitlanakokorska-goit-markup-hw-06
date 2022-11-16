@@ -868,8 +868,9 @@ fill: var(--accent-color);
     -webkit-appearance: none;
     -moz-appearance: none;
   }
-  
-  .check-text span {
+
+  .check-text::before {
+    content: '';
 width: 16px;
 height: 15px;
 border: 2px solid #212121;
@@ -881,7 +882,7 @@ justify-content: center;
 fill: transparent;
   }
 
-.check-input:checked + .check-text span {
+.check-input:checked + .check-text::before {
     background-color: var(--accent-color);
     border-color: transparent;
     background-image: url(../images/check.svg);
